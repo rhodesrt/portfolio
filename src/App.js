@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./components/componentStyles.css";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Nav from "./components/Nav";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Hello from "./components/Hello";
+import useWindowSize from "./components/useWindowSize";
 
-function App() {
+const App = () => {
+  const windowSize = useWindowSize();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="layout">
+      <Nav windowSize={windowSize} />
+      <Hello />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
-}
+};
 
 export default App;
