@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.3f4d0745.css",
+    "main.js": "/portfolio/static/js/main.87c83419.js",
+    "static/media/shoppingCart.png": "/portfolio/static/media/shoppingCart.9ac4659075a7e1a96ad1.png",
+    "static/media/localLibrary.png": "/portfolio/static/media/localLibrary.7a312ac34241e24c958b.png",
+    "static/media/adminDashboard.png": "/portfolio/static/media/adminDashboard.71cef57eb4b66493d0f0.png",
+    "static/media/signUpSheet.png": "/portfolio/static/media/signUpSheet.86de525e04bf3576702c.png",
+    "static/media/memoryGame.png": "/portfolio/static/media/memoryGame.c50a703060179a968165.png",
+    "index.html": "/portfolio/index.html",
+    "main.3f4d0745.css.map": "/portfolio/static/css/main.3f4d0745.css.map",
+    "main.87c83419.js.map": "/portfolio/static/js/main.87c83419.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f4d0745.css",
+    "static/js/main.87c83419.js"
+  ]
+}
