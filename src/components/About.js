@@ -3,14 +3,20 @@ import "./componentStyles.css";
 const About = () => {
   return (
     <div className="about-container">
-      <h1>About Me</h1>
+      <h1>
+        About <span style={{ color: "white" }}>Me</span>
+      </h1>
       <p>
-        I graduated from Whitman College with a degree in Biology. I started
-        learning web development in early 2021 when I completed Harvard's
-        introductory computer science course, CS50. I then began learning
-        full-stack Javascript using The Odin Project's open source curriculum.
-        Along the way, I have built apps using HTML/CSS, JS/React/Node.js,
-        MongoDB, SQLite, and various other tooling technologies.
+        Formal college education in Biology, self-taught programmer. In the
+        beginning of 2021, I began working on Harvard's Introductory to Computer
+        Science course, CS50. While working through the material, I discovered
+        that programming is fulfilling, creative, and entrepreneurial. From
+        printf Mario games in C to full-stack applications using Python and
+        flask, CS50 taught me the fundamentals of Computer Science. I was
+        hooked, so I decided to spend another six months learning Javascript
+        full-time using an open source curriculum called The Odin Project. Its
+        project-driven ethos led me to develop primarily front-end software
+        using HTML/CSS, JS, React, Node, and an array of tooling technologies.
       </p>
     </div>
   );

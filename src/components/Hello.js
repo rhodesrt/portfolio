@@ -5,27 +5,52 @@ import { mdiLinkedin, mdiGithub } from "@mdi/js";
 
 const Hello = () => {
   const selfDescribed = [
-    "Software Developer",
-    "Biologist",
-    "Runner",
-    "Sailor",
-    "Thinker",
+    "Software Developer.",
+    "Biologist.",
+    "Runner.",
+    "Sailor.",
+    "Thinker.",
   ];
-  const [typeWriterWord, setTypeWriterWord] = useState(selfDescribed[0]);
+  const typeWriter = (word, index) => {
+    let elementSpace = document.querySelector("#typewriter");
+    if (index < word.length) {
+      index++;
+      setTimeout(() => {
+        elementSpace.textContent = word.substring(0, index);
+        typeWriter(word, index);
+      }, 100);
+    } else if (index < word.length + word.length + 1) {
+      if (index === word.length) {
+        index++;
+        setTimeout(() => {
+          typeWriter(word, index);
+        }, 5900 - word.length * 2 * 100);
+      } else {
+        index++;
+        setTimeout(() => {
+          elementSpace.textContent = word.substring(
+            0,
+            word.length - (index - word.length - 1)
+          );
+          typeWriter(word, index);
+        }, 100);
+      }
+    }
+  };
   const [count, setCount] = useState(0);
   useEffect(() => {
-    setTypeWriterWord(selfDescribed[count % selfDescribed.length]);
+    typeWriter(selfDescribed[count % selfDescribed.length], 0);
     setTimeout(() => {
       setCount(count + 1);
-    }, 4000);
-  });
+    }, 6000);
+  }, [count]);
 
   return (
     <div className="hello-container">
       <div className="hello-content">
         <div className="typewriter">
           <div>Hi, I'm a</div>
-          <div>{typeWriterWord}</div>
+          <div id="typewriter"></div>
         </div>
         <div>
           <button>About Me</button>
