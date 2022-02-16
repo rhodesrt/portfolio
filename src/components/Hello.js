@@ -54,6 +54,10 @@ const Hello = () => {
       document
         .querySelector(".projects-container")
         .scrollIntoView({ behavior: "smooth" });
+    } else if (e.target.id === "githubLink") {
+      window.open("https://github.com/rhodesrt");
+    } else if (e.target.id === "linkedInLink") {
+      window.open("https://google.com");
     }
   };
 
@@ -69,11 +73,11 @@ const Hello = () => {
           <button onClick={handleLinkClick}>Projects</button>
         </div>
         <div className="handle-links">
-          <div>
+          <div onClick={handleLinkClick} id="githubLink">
             <p>Github</p>
             <Icon path={mdiGithub} />
           </div>
-          <div>
+          <div id="linkedInLink" onClick={handleLinkClick}>
             <p>LinkedIn</p>
             <Icon path={mdiLinkedin} />
           </div>

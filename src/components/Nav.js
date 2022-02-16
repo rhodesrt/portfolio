@@ -43,8 +43,16 @@ const MobileNav = () => {
         .scrollIntoView({ behavior: "smooth" });
     } else if (e.target.textContent === "Contact") {
       document
-        .querySelector(".projects-container")
+        .querySelector(".about-container")
         .scrollIntoView({ behavior: "smooth" });
+      document
+        .querySelector("#emailHighlight")
+        .classList.add("email-highlight");
+      setTimeout(() => {
+        document
+          .querySelector("#emailHighlight")
+          .classList.remove("email-highlight");
+      }, 3000);
     }
   };
 
@@ -89,8 +97,16 @@ const DesktopNav = () => {
         .scrollIntoView({ behavior: "smooth" });
     } else if (e.target.textContent === "Contact") {
       document
-        .querySelector(".projects-container")
+        .querySelector(".about-container")
         .scrollIntoView({ behavior: "smooth" });
+      document
+        .querySelector("#emailHighlight")
+        .classList.add("email-highlight");
+      setTimeout(() => {
+        document
+          .querySelector("#emailHighlight")
+          .classList.remove("email-highlight");
+      }, 3000);
     }
   };
 

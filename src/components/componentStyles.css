@@ -60,6 +60,12 @@ a:visited {
   }
 }
 
+@keyframes email-highlight {
+  50% {
+    background-color: yellow;
+  }
+}
+
 /* Animations */
 
 .layout {
@@ -315,8 +321,18 @@ a:visited {
   font-size: clamp(12px, 0.9rem, 20px);
   font-weight: 600;
   text-align: justify;
-  max-width: 67%;
+  max-width: 75%;
   line-height: 1.7;
+}
+
+.email-highlight {
+  animation: email-highlight 1s alternate infinite;
+}
+
+@media (max-width: 600px) {
+  .about-container p {
+    max-width: 80%;
+  }
 }
 
 .skills-layout {
