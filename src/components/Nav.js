@@ -43,7 +43,7 @@ const MobileNav = () => {
         .scrollIntoView({ behavior: "smooth" });
     } else if (e.target.textContent === "Contact") {
       document
-        .querySelector(".about-container")
+        .querySelector("#emailHighlight")
         .scrollIntoView({ behavior: "smooth" });
       document
         .querySelector("#emailHighlight")
@@ -97,7 +97,7 @@ const DesktopNav = () => {
         .scrollIntoView({ behavior: "smooth" });
     } else if (e.target.textContent === "Contact") {
       document
-        .querySelector(".about-container")
+        .querySelector("#emailHighlight")
         .scrollIntoView({ behavior: "smooth" });
       document
         .querySelector("#emailHighlight")
