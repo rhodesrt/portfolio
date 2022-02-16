@@ -92,10 +92,39 @@ const Project = (props) => {
       <p>{props.description}</p>
       <div className="madeWith">
         <p>Made With: </p>
-        <Icon path={mdiReact} />
-        <Icon path={mdiLanguageJavascript} style={{ color: "yellow" }} />
-        <Icon path={mdiLanguageHtml5} style={{ color: "purple" }} />
-        <Icon path={mdiLanguageCss3} style={{ color: "green" }} />
+        {props.title === "Shopping Cart" ? (
+          <>
+            <Icon path={mdiReact} />
+            <Icon path={mdiLanguageJavascript} style={{ color: "yellow" }} />
+            <Icon path={mdiLanguageHtml5} style={{ color: "purple" }} />
+            <Icon path={mdiLanguageCss3} style={{ color: "green" }} />
+          </>
+        ) : props.title === "Memory Game" ? (
+          <>
+            <Icon path={mdiReact} />
+            <Icon path={mdiLanguageJavascript} style={{ color: "yellow" }} />
+            <Icon path={mdiLanguageHtml5} style={{ color: "purple" }} />
+            <Icon path={mdiLanguageCss3} style={{ color: "green" }} />
+          </>
+        ) : props.title === "Admin Dashboard" ? (
+          <>
+            <Icon path={mdiLanguageHtml5} style={{ color: "purple" }} />
+            <Icon path={mdiLanguageCss3} style={{ color: "green" }} />
+          </>
+        ) : props.title === "Sign Up Sheet" ? (
+          <>
+            <Icon path={mdiLanguageHtml5} style={{ color: "purple" }} />
+            <Icon path={mdiLanguageCss3} style={{ color: "green" }} />
+          </>
+        ) : (
+          <>
+            <Icon path={mdiLanguageJavascript} style={{ color: "yellow" }} />
+            <Icon path={mdiLanguageHtml5} style={{ color: "purple" }} />
+            <Icon path={mdiLanguageCss3} style={{ color: "skyBlue" }} />
+            <Icon path={mdiNodejs} style={{ color: "var(--aqua)" }} />
+            <Icon path={mdiLeaf} style={{ color: "green" }} />
+          </>
+        )}
       </div>
       <div className="project-buttons">
         <button onClick={handleLinkClick}>Demo</button>
