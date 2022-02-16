@@ -14,6 +14,7 @@ import {
   mdiGit,
   mdiWebpack,
   mdiAtom,
+  mdiLanguagePython,
 } from "@mdi/js";
 import Icon from "@mdi/react";
 
@@ -38,6 +39,10 @@ const Skills = () => {
           <div>
             <p>CSS</p>
             <Icon path={mdiLanguageCss3} style={{ color: "skyBlue" }} />
+          </div>
+          <div>
+            <p>Python</p>
+            <Icon path={mdiLanguagePython} style={{ color: "var(--aqua)" }} />
           </div>
         </div>
         <div className="card">

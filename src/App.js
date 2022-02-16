@@ -1,6 +1,5 @@
 import "./components/componentStyles.css";
 import About from "./components/About";
-import Contact from "./components/Contact";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
@@ -17,7 +16,6 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
-      <Contact />
     </div>
   );
 };
