@@ -45,6 +45,18 @@ const Hello = () => {
     }, 6000);
   }, [count]);
 
+  const handleLinkClick = (e) => {
+    if (e.target.textContent === "About Me") {
+      document
+        .querySelector(".about-container")
+        .scrollIntoView({ behavior: "smooth" });
+    } else if (e.target.textContent === "Projects") {
+      document
+        .querySelector(".projects-container")
+        .scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="hello-container">
       <div className="hello-content">
@@ -53,8 +65,8 @@ const Hello = () => {
           <div id="typewriter"></div>
         </div>
         <div>
-          <button>About Me</button>
-          <button>Projects</button>
+          <button onClick={handleLinkClick}>About Me</button>
+          <button onClick={handleLinkClick}>Projects</button>
         </div>
         <div className="handle-links">
           <div>
