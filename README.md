@@ -1,1 +1,2 @@
-https://www.tristanrhodes.dev
+Live Hosted Link:
+https://rhodesrt.github.io/portfolio
