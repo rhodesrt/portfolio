@@ -49,6 +49,42 @@ const Projects = () => {
 export default Projects;
 
 const Project = (props) => {
+  const handleLinkClick = (e) => {
+    if (props.title === "Shopping Cart") {
+      if (e.target.textContent === "Demo") {
+        window.open("https://rhodesrt.github.io/shopping-cart");
+      } else if (e.target.textContent === "Code") {
+        window.open(
+          "https://github.com/rhodesrt/shopping-cart/tree/sourceCode/src"
+        );
+      }
+    } else if (props.title === "Memory Game") {
+      if (e.target.textContent === "Demo") {
+        window.open("https://rhodesrt.github.io/memory-game/");
+      } else if (e.target.textContent === "Code") {
+        window.open("https://github.com/rhodesrt/memory-game");
+      }
+    } else if (props.title === "Admin Dashboard") {
+      if (e.target.textContent === "Demo") {
+        window.open("https://rhodesrt.github.io/admin_dashboard/");
+      } else if (e.target.textContent === "Code") {
+        window.open("https://github.com/rhodesrt/admin_dashboard");
+      }
+    } else if (props.title === "Sign Up Sheet") {
+      if (e.target.textContent === "Demo") {
+        window.open("https://rhodesrt.github.io/signUpSheet/");
+      } else if (e.target.textContent === "Code") {
+        window.open("https://github.com/rhodesrt/signUpSheet");
+      }
+    } else if (props.title === "Local Library") {
+      if (e.target.textContent === "Demo") {
+        window.open("https://obscure-thicket-03412.herokuapp.com/catalog");
+      } else if (e.target.textContent === "Code") {
+        window.open("https://github.com/rhodesrt/localLibrary");
+      }
+    }
+  };
+
   return (
     <div className="project-card">
       <div id={props.id}></div>
@@ -62,8 +98,8 @@ const Project = (props) => {
         <Icon path={mdiLanguageCss3} style={{ color: "green" }} />
       </div>
       <div className="project-buttons">
-        <button>Demo</button>
-        <button>Code</button>
+        <button onClick={handleLinkClick}>Demo</button>
+        <button onClick={handleLinkClick}>Code</button>
       </div>
     </div>
   );

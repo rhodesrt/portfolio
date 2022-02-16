@@ -63,10 +63,10 @@ const MobileNav = () => {
   } else if (navIsOpen) {
     return (
       <nav className="mobile-nav-container column">
-        <p onclick={handleLinkTouch}>About</p>
-        <p onclick={handleLinkTouch}>Skills</p>
-        <p onclick={handleLinkTouch}>Projects</p>
-        <p onclick={handleLinkTouch}>Contact</p>
+        <p onClick={handleLinkTouch}>About</p>
+        <p onClick={handleLinkTouch}>Skills</p>
+        <p onClick={handleLinkTouch}>Projects</p>
+        <p onClick={handleLinkTouch}>Contact</p>
         <p onClick={toggleNav}>x</p>
       </nav>
     );
