@@ -7,7 +7,7 @@ const About = () => {
         About <span style={{ color: "white" }}>Me</span>
       </h1>
       <p>
-        Formal college education in Biology, professional experience as a fine
+        BS in Biology from Whitman College, professional experience as a fine
         dining cook, and a self-taught programmer. In the beginning of 2021, I
         began learning to program with Harvard's Introductory to Computer
         Science course, CS50. While working through the material, I discovered
