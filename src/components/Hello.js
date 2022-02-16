@@ -57,7 +57,7 @@ const Hello = () => {
     } else if (e.target.id === "githubLink") {
       window.open("https://github.com/rhodesrt");
     } else if (e.target.id === "linkedInLink") {
-      window.open("https://google.com");
+      window.open("https://www.linkedin.com/in/tristan-rhodes-a0a808228");
     }
   };
 
