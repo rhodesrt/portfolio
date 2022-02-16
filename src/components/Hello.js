@@ -54,10 +54,16 @@ const Hello = () => {
       document
         .querySelector(".projects-container")
         .scrollIntoView({ behavior: "smooth" });
-    } else if (e.target.id === "githubLink") {
+    } else if (
+      e.target.id === "githubLink" ||
+      e.target.textContent === "Github"
+    ) {
       window.open("https://github.com/rhodesrt");
-    } else if (e.target.id === "linkedInLink") {
-      window.open("https://www.linkedin.com/in/tristan-rhodes-a0a808228");
+    } else if (
+      e.target.id === "linkedInLink" ||
+      e.target.textContent === "LinkedIn"
+    ) {
+      window.open("https://linkedin.com/in/tristan-rhodes-a0a808228");
     }
   };
 
@@ -74,11 +80,11 @@ const Hello = () => {
         </div>
         <div className="handle-links">
           <div onClick={handleLinkClick} id="githubLink">
-            <p>Github</p>
+            <p onClick={handleLinkClick}>Github</p>
             <Icon path={mdiGithub} />
           </div>
           <div id="linkedInLink" onClick={handleLinkClick}>
-            <p>LinkedIn</p>
+            <p onClick={handleLinkClick}>LinkedIn</p>
             <Icon path={mdiLinkedin} />
           </div>
         </div>
