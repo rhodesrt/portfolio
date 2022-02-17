@@ -17,11 +17,6 @@ const Projects = () => {
       </h1>
       <div className="project-cards-grid">
         <Project
-          title="Shopping Cart"
-          description="Web Store modeled after the Laser Sailboat Performance Store."
-          id="shoppingCart"
-        />
-        <Project
           title="Memory Game"
           description="Memory challenge with flags of different countries for a high score."
           id="memoryGame"
@@ -32,14 +27,19 @@ const Projects = () => {
           id="adminDashboard"
         />
         <Project
-          title="Sign Up Sheet"
-          description="An example of a website signup form."
-          id="signupSheet"
+          title="Shopping Cart"
+          description="Web Store modeled after the Laser Sailboat Performance Store."
+          id="shoppingCart"
         />
         <Project
           title="Local Library"
           description="Online book catalog with connection to database and Express backend."
           id="localLibrary"
+        />
+        <Project
+          title="Sign Up Sheet"
+          description="An example of a website signup form."
+          id="signupSheet"
         />
       </div>
     </div>
