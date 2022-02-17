@@ -8,7 +8,7 @@ const About = () => {
       </h1>
       <p>
         BS in Biology from Whitman College, professional experience as a fine
-        dining cook, and a self-taught programmer. In the beginning of 2021, I
+        dining chef, and a self-taught programmer. In the beginning of 2021, I
         began learning to program with Harvard's Introductory to Computer
         Science course, CS50. While working through the material, I discovered
         that software development could be a fulfilling, creative, and
