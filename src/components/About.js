@@ -7,23 +7,26 @@ const About = () => {
         About <span style={{ color: "white" }}>Me</span>
       </h1>
       <p>
-        BS in Biology from Whitman College, professional experience as a fine
-        dining chef, and a self-taught programmer. In the beginning of 2021, I
-        began learning to program with Harvard's Introductory to Computer
-        Science course, CS50. While working through the material, I discovered
+        I graduated with my BS in Molecular Biology from Whitman College in
+        2020. While writing my thesis, I was introduced to programming in Python
+        in order to complete some BLAST sequencing analysis of various species
+        of ascomycotic fungi. Before graduation, I was recruited to work as a
+        sous chef in fine dining which had been a goal of mine for some time.
+        Over two years working as a chef, I completed software development
+        courses on the side hosted by organizations such as Harvard University
+        and The Odin Project. While working through the material, I discovered
         that software development could be a fulfilling, creative, and
-        entrepreneurial career. From command line Mario emulators in C to
-        full-stack applications using Python and flask, CS50 taught me the basic
-        fundamentals of Computer Science. I was hooked, so I decided to fully
-        commit myself to the pursuit of software engineering competency through
-        an independent, open source curriculum called The Odin Project. Its
-        project-driven ethos led me to develop dozens of primarily front-end
-        applications using HTML/CSS, JS, React, Node, MongoDB, and an array of
-        tooling technologies. Now I am focusing on the beginning of my career in
-        web development. If you are interested in hiring an experienced front
-        end developer, take a look at some of my skills and projects featured on
-        this portfolio, and please get in touch via e-mail at
-        <span id="emailHighlight"> rhodestrt@gmail.com</span>.
+        entrepreneurial career. From command line Mario emulators in C and
+        full-stack applications using Python and flask, to now developing my own
+        React applicationss, I have gained a strong background in front end
+        JavaScript development as well as an operational, but growing
+        understanding of full-stack development with Node and Express. Now I am
+        focusing on the beginning of my career in web development. If you would
+        like to get to know me on a personal level, please get in touch via
+        e-mail at
+        <span id="emailHighlight"> rhodestrt@gmail.com</span>. You might also be
+        interested in taking a look at my full array of skills, as well as some
+        of the projects I have completed by scrolling down this page.
       </p>
     </div>
   );
