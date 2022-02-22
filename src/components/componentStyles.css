@@ -435,6 +435,12 @@ a:visited {
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 }
+
+.current-project {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -444,6 +450,13 @@ a:visited {
   border-radius: 12px;
   max-width: 300px;
   background-color: var(--neutralDark);
+}
+.project-card #sylva {
+  background: url("../images/sylvaBackground.jpg") center;
+  background-size: cover;
+  border-radius: 12px;
+  height: 200px;
+  width: 100%;
 }
 .project-card #shoppingCart {
   background: url("../images/shoppingCart.png");

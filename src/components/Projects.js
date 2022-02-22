@@ -17,6 +17,12 @@ const Projects = () => {
       </h1>
       <div className="project-cards-grid">
         <Project
+          title="Sylva"
+          description="Pixel grid evolution simulator. Currently in progress."
+          id="sylva"
+          className="current-project"
+        />
+        <Project
           title="Memory Game"
           description="Memory challenge with flags of different countries for a high score."
           id="memoryGame"
