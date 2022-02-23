@@ -88,6 +88,10 @@ const Project = (props) => {
       } else if (e.target.textContent === "Code") {
         window.open("https://github.com/rhodesrt/localLibrary");
       }
+    } else if (props.title === "Sylva") {
+      if (e.target.textContent === "Demo" || e.target.textContent === "Code") {
+        window.open("https://github.com/rhodesrt/sylva");
+      }
     }
   };
 
@@ -133,8 +137,16 @@ const Project = (props) => {
         )}
       </div>
       <div className="project-buttons">
-        <button onClick={handleLinkClick}>Demo</button>
-        <button onClick={handleLinkClick}>Code</button>
+        {props.title === "Sylva" ? (
+          <>
+            <button onClick={handleLinkClick}>Code</button>
+          </>
+        ) : (
+          <>
+            <button onClick={handleLinkClick}>Demo</button>
+            <button onClick={handleLinkClick}>Code</button>
+          </>
+        )}
       </div>
     </div>
   );
