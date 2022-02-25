@@ -18,7 +18,7 @@ const Projects = () => {
       <div className="project-cards-grid">
         <Project
           title="Sylva"
-          description="Pixel grid evolution simulator. Currently in progress."
+          description="Savannah Population Dynamics Simulator."
           id="sylva"
           className="current-project"
         />
@@ -89,8 +89,10 @@ const Project = (props) => {
         window.open("https://github.com/rhodesrt/localLibrary");
       }
     } else if (props.title === "Sylva") {
-      if (e.target.textContent === "Demo" || e.target.textContent === "Code") {
+      if (e.target.textContent === "Code") {
         window.open("https://github.com/rhodesrt/sylva");
+      } else if (e.target.textContent === "Demo") {
+        window.open("https://rhodesrt.github.io/sylva");
       }
     }
   };
@@ -126,6 +128,13 @@ const Project = (props) => {
             <Icon path={mdiLanguageHtml5} style={{ color: "purple" }} />
             <Icon path={mdiLanguageCss3} style={{ color: "green" }} />
           </>
+        ) : props.title === "Sylva" ? (
+          <>
+            <Icon path={mdiReact} />
+            <Icon path={mdiLanguageJavascript} style={{ color: "yellow" }} />
+            <Icon path={mdiLanguageHtml5} style={{ color: "purple" }} />
+            <Icon path={mdiLanguageCss3} style={{ color: "green" }} />
+          </>
         ) : (
           <>
             <Icon path={mdiLanguageJavascript} style={{ color: "yellow" }} />
@@ -137,16 +146,12 @@ const Project = (props) => {
         )}
       </div>
       <div className="project-buttons">
-        {props.title === "Sylva" ? (
-          <>
-            <button onClick={handleLinkClick}>Code</button>
-          </>
-        ) : (
+        {
           <>
             <button onClick={handleLinkClick}>Demo</button>
             <button onClick={handleLinkClick}>Code</button>
           </>
-        )}
+        }
       </div>
     </div>
   );
