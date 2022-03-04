@@ -451,6 +451,16 @@ a:visited {
   max-width: 300px;
   background-color: var(--neutralDark);
 }
+.project-picture:hover {
+  cursor: pointer;
+}
+.project-card #sortVisualizer {
+  background: url("../images/sortVisualizer.png") center;
+  background-size: cover;
+  border-radius: 12px;
+  height: 200px;
+  width: 100%;
+}
 .project-card #sylva {
   background: url("../images/sylvaBackground.jpg") center;
   background-size: cover;

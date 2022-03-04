@@ -17,10 +17,14 @@ const Projects = () => {
       </h1>
       <div className="project-cards-grid">
         <Project
+          title="Sort Visualizer"
+          description="Visualization of common sorting algorithms"
+          id="sortVisualizer"
+        />
+        <Project
           title="Sylva"
           description="Savannah Population Dynamics Simulator."
           id="sylva"
-          className="current-project"
         />
         <Project
           title="Memory Game"
@@ -42,11 +46,6 @@ const Projects = () => {
           description="Online book catalog with connection to database and Express backend."
           id="localLibrary"
         />
-        <Project
-          title="Sign Up Sheet"
-          description="An example of a website signup form."
-          id="signupSheet"
-        />
       </div>
     </div>
   );
@@ -57,54 +56,65 @@ export default Projects;
 const Project = (props) => {
   const handleLinkClick = (e) => {
     if (props.title === "Shopping Cart") {
-      if (e.target.textContent === "Demo") {
-        window.open("https://rhodesrt.github.io/shopping-cart");
-      } else if (e.target.textContent === "Code") {
+      if (e.target.textContent === "Code") {
         window.open(
           "https://github.com/rhodesrt/shopping-cart/tree/sourceCode/src"
         );
+      } else {
+        window.open("https://rhodesrt.github.io/shopping-cart");
       }
     } else if (props.title === "Memory Game") {
-      if (e.target.textContent === "Demo") {
-        window.open("https://rhodesrt.github.io/memory-game/");
-      } else if (e.target.textContent === "Code") {
+      if (e.target.textContent === "Code") {
         window.open("https://github.com/rhodesrt/memory-game");
+      } else {
+        window.open("https://rhodesrt.github.io/memory-game/");
       }
     } else if (props.title === "Admin Dashboard") {
-      if (e.target.textContent === "Demo") {
-        window.open("https://rhodesrt.github.io/admin_dashboard/");
-      } else if (e.target.textContent === "Code") {
+      if (e.target.textContent === "Code") {
         window.open("https://github.com/rhodesrt/admin_dashboard");
-      }
-    } else if (props.title === "Sign Up Sheet") {
-      if (e.target.textContent === "Demo") {
-        window.open("https://rhodesrt.github.io/signUpSheet/");
-      } else if (e.target.textContent === "Code") {
-        window.open("https://github.com/rhodesrt/signUpSheet");
+      } else {
+        window.open("https://rhodesrt.github.io/admin_dashboard/");
       }
     } else if (props.title === "Local Library") {
-      if (e.target.textContent === "Demo") {
-        window.open("https://obscure-thicket-03412.herokuapp.com/catalog");
-      } else if (e.target.textContent === "Code") {
+      if (e.target.textContent === "Code") {
         window.open("https://github.com/rhodesrt/localLibrary");
+      } else {
+        window.open("https://obscure-thicket-03412.herokuapp.com/catalog");
       }
     } else if (props.title === "Sylva") {
       if (e.target.textContent === "Code") {
         window.open("https://github.com/rhodesrt/sylva");
-      } else if (e.target.textContent === "Demo") {
+      } else {
         window.open("https://rhodesrt.github.io/sylva");
+      }
+    } else if (props.title === "Sort Visualizer") {
+      if (e.target.textContent === "Code") {
+        window.open("https://github.com/rhodesrt/sort-visualization");
+      } else {
+        window.open("https://rhodesrt.github.io/sort-visualization");
       }
     }
   };
 
   return (
     <div className="project-card">
-      <div id={props.id}></div>
+      <div
+        className="project-picture"
+        onClick={handleLinkClick}
+        id={props.id}
+      ></div>
       <h1>{props.title}</h1>
       <p>{props.description}</p>
       <div className="madeWith">
         <p>Made With: </p>
-        {props.title === "Shopping Cart" ? (
+        {props.title === "Sort Visualizer" ? (
+          <>
+            <Icon path={mdiReact} />
+            <Icon path={mdiLanguageJavascript} style={{ color: "yellow" }} />
+            <Icon path={mdiLanguageHtml5} style={{ color: "purple" }} />
+            <Icon path={mdiLanguageCss3} style={{ color: "green" }} />
+          </>
+        ) : props.title === "Shopping Cart" ? (
           <>
             <Icon path={mdiReact} />
             <Icon path={mdiLanguageJavascript} style={{ color: "yellow" }} />
@@ -119,11 +129,6 @@ const Project = (props) => {
             <Icon path={mdiLanguageCss3} style={{ color: "green" }} />
           </>
         ) : props.title === "Admin Dashboard" ? (
-          <>
-            <Icon path={mdiLanguageHtml5} style={{ color: "purple" }} />
-            <Icon path={mdiLanguageCss3} style={{ color: "green" }} />
-          </>
-        ) : props.title === "Sign Up Sheet" ? (
           <>
             <Icon path={mdiLanguageHtml5} style={{ color: "purple" }} />
             <Icon path={mdiLanguageCss3} style={{ color: "green" }} />
