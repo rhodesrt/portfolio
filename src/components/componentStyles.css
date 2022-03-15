@@ -278,6 +278,10 @@ a:visited {
   background-color: #0077b5;
   color: white;
 }
+.handle-links > div:nth-child(3) {
+  background-color: var(--aqua);
+  color: white;
+}
 
 .handle-links > div:hover {
   cursor: pointer;

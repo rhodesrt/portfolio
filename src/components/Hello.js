@@ -1,7 +1,7 @@
 import "./componentStyles.css";
 import React, { useEffect, useState } from "react";
 import Icon from "@mdi/react";
-import { mdiLinkedin, mdiGithub } from "@mdi/js";
+import { mdiLinkedin, mdiGithub, mdiFileAccount } from "@mdi/js";
 
 const Hello = () => {
   const selfDescribed = [

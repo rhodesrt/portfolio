@@ -2,6 +2,7 @@ import "./componentStyles.css";
 import {
   mdiXml,
   mdiLibrary,
+  mdiAlphaC,
   mdiTools,
   mdiLanguageJavascript,
   mdiLanguageHtml5,
@@ -43,6 +44,10 @@ const Skills = () => {
           <div>
             <p>Python</p>
             <Icon path={mdiLanguagePython} style={{ color: "var(--aqua)" }} />
+          </div>
+          <div>
+            <p>C</p>
+            <Icon path={mdiAlphaC} style={{ color: "var(--bloodRed)" }} />
           </div>
         </div>
         <div className="card">
